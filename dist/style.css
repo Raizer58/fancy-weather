@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3% 0%; }
+  margin: 2% 0%; }
   header button {
     background: #505050;
     border-radius: 5px;
@@ -41,7 +41,7 @@ header {
       transition: transform ease-in-out .3s;
       box-shadow: 4px 4px 4px 1px black; }
   header .header__change-images {
-    min-width: 15%; }
+    min-width: 16%; }
   header .header__change-fahrenheit,
   header .header__change-celsius {
     margin-right: 1%; }
@@ -52,6 +52,7 @@ header {
     color: white;
     padding: 0.5% 1%;
     margin-right: 3%;
+    min-width: 5%;
     transition: transform ease-in-out .3s; }
     header select:hover {
       cursor: pointer;
@@ -67,6 +68,7 @@ header {
     text-align: right; }
     header form input {
       background: #505050;
+      width: 25%;
       color: white;
       padding: 0.5% 1%;
       border-radius: 5px;
@@ -80,11 +82,12 @@ header {
         transition: transform ease-in-out .3s; }
     header form button {
       margin-left: 2%;
+      margin-right: 0%;
       padding: 0.8% 1.5%; }
 
 main {
-  color: white;
-  text-shadow: 4px 4px 5px black; }
+  color: #f0f0f0;
+  text-shadow: 0px 0px 5px black; }
   main .main__load-screen {
     position: fixed;
     display: flex;
@@ -265,6 +268,7 @@ main {
     max-height: 2000px;
     background: white; }
     main .main__swiper-loading p {
+      color: black;
       font-size: 5vw;
       font-weight: 900;
       text-transform: uppercase;
@@ -302,14 +306,52 @@ main {
     main .main__data .main__weather .weather__one-day {
       display: flex;
       flex-wrap: wrap; }
-      main .main__data .main__weather .weather__one-day h2 {
-        width: 100%;
-        margin: 3% 0%;
-        font-size: 3em; }
+      main .main__data .main__weather .weather__one-day h2,
       main .main__data .main__weather .weather__one-day .one-day__country,
       main .main__data .main__weather .weather__one-day .one-day__time {
         width: 100%;
-        margin: 0%; }
-    main .main__data .main__location #map {
-      width: 250px;
-      height: 250px; }
+        margin-bottom: 2%;
+        margin-top: 0%;
+        text-transform: uppercase; }
+      main .main__data .main__weather .weather__one-day h2 {
+        font-size: 3.5em; }
+      main .main__data .main__weather .weather__one-day .one-day__country {
+        font-size: 1.5em; }
+      main .main__data .main__weather .weather__one-day .one-day__time {
+        font-size: 2.5em; }
+      main .main__data .main__weather .weather__one-day .one-day__data-weather {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 5%;
+        width: 100%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather > p {
+          font-size: 10em;
+          margin: 0%;
+          width: 100%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather img {
+          position: absolute;
+          right: 40%;
+          top: -25%;
+          width: 15%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data p {
+          font-size: 1.5em;
+          margin-top: 0%;
+          margin-bottom: 2%; }
+    main .main__data .main__weather .weather__three-days {
+      display: flex;
+      font-size: 1.3em;
+      margin-top: 3%; }
+      main .main__data .main__weather .weather__three-days div {
+        margin-right: 7%; }
+      main .main__data .main__weather .weather__three-days h3 {
+        margin: 1%;
+        text-transform: uppercase; }
+      main .main__data .main__weather .weather__three-days p {
+        margin: 1%; }
+    main .main__data .main__location {
+      width: 50%; }
+      main .main__data .main__location #map {
+        width: 350px;
+        height: 350px;
+        margin-top: 35%; }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Fancy Weather</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <button class="header__change-images">Change Images</button>
+            <select name="languges" id="#languges" class="header__change-languges">
+                <option value="Eng">Eng</option>
+                <option value="Rus">Rus</option>
+                <option value="Br">Br</option>
+            </select>
+            <button class="header__change-celsius">&deg;C</button>
+            <button class="header__change-fahrenheit">&deg;F</button>
+            <h1>Fancy Weather</h1>
+            <form>
+                <input type="text" placeholder="Search sity" required>
+                <button>Search</button>
+            </form>
+        </header>
+        <main class="main">
+            <div class="main__load-screen">
+                <img src="./dist/img/sun.png" class="load-screen__sun" alt="sun">
+                <img src="./dist/img/rain.png" class="load-screen__rain" alt="rain">
+                <img src="./dist/img/snow.png" class="load-screen__snow" alt="snow">
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                </div>
+            </div>
+            <div class="main__swiper-loading body__display-none">
+                <p>loading images ...</p>
+                <div></div>
+            </div>
+            <div class="main__data">
+                <div class="main__weather">
+                    <div class="weather__one-day"></div>
+                    <div class="weather__three-days"></div>
+                </div>
+                <div class="main__location">
+                    <div id="map"></div>
+                    <div class="location__coordinates"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./dist/main.js" defer></script>
+</body>
+</html>

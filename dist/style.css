@@ -314,11 +314,11 @@ main {
         margin-top: 0%;
         text-transform: uppercase; }
       main .main__data .main__weather .weather__one-day h2 {
-        font-size: 3.5em; }
+        font-size: 3.5rem; }
       main .main__data .main__weather .weather__one-day .one-day__country {
-        font-size: 1.5em; }
+        font-size: 1.5rem; }
       main .main__data .main__weather .weather__one-day .one-day__time {
-        font-size: 2.5em; }
+        font-size: 2.5rem; }
       main .main__data .main__weather .weather__one-day .one-day__data-weather {
         display: flex;
         flex-wrap: wrap;
@@ -326,7 +326,8 @@ main {
         margin-top: 5%;
         width: 100%; }
         main .main__data .main__weather .weather__one-day .one-day__data-weather > p {
-          font-size: 10em;
+          position: absolute;
+          font-size: 10rem;
           margin: 0%;
           width: 100%; }
         main .main__data .main__weather .weather__one-day .one-day__data-weather img {
@@ -334,13 +335,15 @@ main {
           right: 40%;
           top: -25%;
           width: 15%; }
-        main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data p {
-          font-size: 1.5em;
-          margin-top: 0%;
-          margin-bottom: 2%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data {
+          margin-top: 22%; }
+          main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data p {
+            font-size: 1.5rem;
+            margin-top: 0%;
+            margin-bottom: 2%; }
     main .main__data .main__weather .weather__three-days {
       display: flex;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       margin-top: 3%; }
       main .main__data .main__weather .weather__three-days div {
         margin-right: 7%; }
@@ -350,8 +353,190 @@ main {
       main .main__data .main__weather .weather__three-days p {
         margin: 1%; }
     main .main__data .main__location {
-      width: 50%; }
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
       main .main__data .main__location #map {
         width: 350px;
-        height: 350px;
-        margin-top: 35%; }
+        height: 350px; }
+      main .main__data .main__location p {
+        text-align: right; }
+
+@media screen and (max-width: 1030px) {
+  header button {
+    font-size: 1.3rem; }
+  header .header__change-images {
+    min-width: 20%; }
+  header .header__change-fahrenheit,
+  header .header__change-celsius {
+    margin-right: 2%; }
+  header select {
+    font-size: 1.3rem;
+    min-width: 12%; }
+  header form input {
+    font-size: 1.3rem;
+    width: 55%;
+    padding: 1.5% 3%; }
+  header form button {
+    margin-left: 3%; }
+  main {
+    color: #f0f0f0;
+    text-shadow: 0px 0px 5px black; }
+    main .main__data .main__weather {
+      margin-top: 10%; }
+      main .main__data .main__weather .weather__one-day h2,
+      main .main__data .main__weather .weather__one-day .one-day__country,
+      main .main__data .main__weather .weather__one-day .one-day__time {
+        margin-bottom: 5%; }
+      main .main__data .main__weather .weather__one-day h2 {
+        font-size: 4rem; }
+      main .main__data .main__weather .weather__one-day .one-day__country {
+        font-size: 2rem; }
+      main .main__data .main__weather .weather__one-day .one-day__time {
+        font-size: 3rem; }
+      main .main__data .main__weather .weather__one-day .one-day__data-weather {
+        margin-top: 10%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather > p {
+          font-size: 12rem; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather img {
+          right: 15%;
+          top: -25%;
+          width: 25%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data {
+          margin-top: 40%; }
+          main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data p {
+            font-size: 2rem; }
+      main .main__data .main__weather .weather__three-days {
+        font-size: 1.5rem;
+        margin-top: 10%; }
+        main .main__data .main__weather .weather__three-days div {
+          margin-right: 6%; }
+        main .main__data .main__weather .weather__three-days img {
+          width: 80px; }
+    main .main__data .main__location #map {
+      width: 350px;
+      height: 350px; }
+    main .main__data .main__location p {
+      font-size: 2rem; } }
+
+@media screen and (max-width: 770px) {
+  header button {
+    font-size: 1rem; }
+  header .header__change-images {
+    min-width: 20%; }
+  header .header__change-fahrenheit,
+  header .header__change-celsius {
+    margin-right: 1%; }
+  header select {
+    font-size: 1rem; }
+  header form input {
+    font-size: 1rem;
+    width: 45%;
+    padding: 0.5% 1.5%; }
+  header form button {
+    margin-left: 3%; }
+  main {
+    color: #f0f0f0;
+    text-shadow: 0px 0px 5px black; }
+    main .main__data .main__weather {
+      margin-top: 5%; }
+      main .main__data .main__weather .weather__one-day h2,
+      main .main__data .main__weather .weather__one-day .one-day__country,
+      main .main__data .main__weather .weather__one-day .one-day__time {
+        margin-bottom: 3%; }
+      main .main__data .main__weather .weather__one-day h2 {
+        font-size: 3.5rem; }
+      main .main__data .main__weather .weather__one-day .one-day__country {
+        font-size: 2rem; }
+      main .main__data .main__weather .weather__one-day .one-day__time {
+        font-size: 2.5rem; }
+      main .main__data .main__weather .weather__one-day .one-day__data-weather {
+        margin-top: 15%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather > p {
+          font-size: 9rem; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather img {
+          right: 10%;
+          top: -25%;
+          width: 25%; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data {
+          margin-top: 40%; }
+          main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data p {
+            font-size: 2rem; }
+      main .main__data .main__weather .weather__three-days {
+        font-size: 1.2rem;
+        margin-top: 15%; }
+        main .main__data .main__weather .weather__three-days div {
+          margin-right: 6%; }
+        main .main__data .main__weather .weather__three-days h3 {
+          margin-bottom: 10%; }
+        main .main__data .main__weather .weather__three-days img {
+          width: 60px; }
+    main .main__data .main__location #map {
+      width: 250px;
+      height: 250px; }
+    main .main__data .main__location p {
+      font-size: 1.5rem; } }
+
+@media screen and (max-width: 480px) {
+  header {
+    flex-wrap: wrap; }
+    header form {
+      text-align: left;
+      margin-top: 3%; }
+      header form input {
+        width: 66%; }
+        header form input:focus {
+          transform: scale(1.3) translateX(10%) translateY(125%); }
+      header form button {
+        margin-left: 3%; }
+  main {
+    color: #f0f0f0;
+    text-shadow: 0px 0px 5px black; }
+    main .main__data {
+      flex-wrap: wrap;
+      justify-content: center; }
+      main .main__data .main__weather {
+        margin-top: 5%; }
+        main .main__data .main__weather .weather__one-day h2,
+        main .main__data .main__weather .weather__one-day .one-day__country,
+        main .main__data .main__weather .weather__one-day .one-day__time {
+          margin-bottom: 3%; }
+        main .main__data .main__weather .weather__one-day h2 {
+          font-size: 2.5rem; }
+        main .main__data .main__weather .weather__one-day .one-day__country {
+          font-size: 1rem; }
+        main .main__data .main__weather .weather__one-day .one-day__time {
+          font-size: 1.5rem; }
+        main .main__data .main__weather .weather__one-day .one-day__data-weather {
+          margin-top: 8%; }
+          main .main__data .main__weather .weather__one-day .one-day__data-weather > p {
+            font-size: 5rem; }
+          main .main__data .main__weather .weather__one-day .one-day__data-weather img {
+            right: 20%;
+            top: -25%;
+            width: 20%; }
+          main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data {
+            margin-top: 30%; }
+            main .main__data .main__weather .weather__one-day .one-day__data-weather .data-weather__other-data p {
+              font-size: 1rem; }
+        main .main__data .main__weather .weather__three-days {
+          font-size: .8rem;
+          margin-top: 5%; }
+          main .main__data .main__weather .weather__three-days div {
+            margin-right: 6%; }
+          main .main__data .main__weather .weather__three-days h3 {
+            margin-bottom: 10%; }
+          main .main__data .main__weather .weather__three-days img {
+            width: 60px; }
+      main .main__data .main__location {
+        width: 100%;
+        align-items: center;
+        margin-top: 5%; }
+        main .main__data .main__location #map {
+          width: 250px;
+          height: 250px; }
+        main .main__data .main__location p {
+          font-size: 0.8rem;
+          margin-right: calc((100% - 250px) / 2); } }
